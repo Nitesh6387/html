@@ -1,0 +1,114 @@
+HTML ==>
+    html stands for Hyper Text Markup Laguage
+    the founder of html is "Tim Burner Lee"  in 1994.
+
+
+Head Tag Contains:-
+
+	<base />
+	<meta />
+	<link />
+	<title></title>
+	<style></style>
+	<script></script>
+	<nonscript></nonscript>
+	<command></command>
+
+
+Methods in Form:-
+
+    1.Get ==>
+        -- Less Secure
+        -- data will be save in your history
+        -- Url length is limited(2048 char.)
+		-- By default get method is called.
+
+    2.Post ==>
+        -- More Secure
+        -- data will not be save in your history
+        -- Url length is not limited(more than 2048 char.)
+   
+	
+
+
+
+
+CSS ==>
+        CSS stands for Cascading Style Sheets. CSS is used for making webpages intractive. It is used to give style to your webpage.
+
+    Types -->
+        Inline CSS :-
+            <h1 style="">HelloWorld</h1>
+
+        Internal CSS :-
+            <style></style>
+
+        External CSS :- make another css file and save as filename.css
+            <link href="filename.css" rel="stylesheet"/>
+
+
+
+Border: size type color;
+
+	size value in px
+	
+	type--> solid
+			groove
+			dashed
+			double
+			dotted
+			
+	--> 	border:2px solid red;
+			
+			
+Box-shadow:horizontal vertical blur color;
+    
+	--> 	box-shadow:2px 2px 10px red;
+	
+	--> 	box-shadow:px 5px 10px blue inset;
+	
+	--> 	box-shadow:px 5px 10px blue inset,box-shadow:2px 2px 10px red;
+	
+	
+Text-Transform :-
+
+		-Captialize  -(Ram)
+		-lowercase   -(ram)
+		-Uppercase   (-RAM)
+		
+		
+		
+CSS Animation:-
+
+			#box{
+				animation-name:animation_name;
+				
+				animation-duration:5s;
+				
+				animation-delay:2s;
+				
+				animation-iteration-count:
+							number(1-infinite) -> // number of times calling animation
+							
+				animation-timing-function:
+							ease ->start slow then fast and end slow
+							ease-in ->start slow
+							ease-out ->end slow
+							linear -> same speed
+			}
+		
+			@keyframes animation_name{
+				0%{background:red;}
+				50%{background:aqua;}
+				100%{background:green;}	
+			}
+			
+			
+			
+CSS Position :-
+
+		static    //by default
+		relative
+		absolute
+		fixed
+		sticky 

@@ -1,0 +1,29 @@
+<html>
+<head>
+<style>
+h1{
+background:gray;
+color:white;
+}
+input{
+width:150px;
+height:40px
+}
+</style>
+</head>
+<body>
+<form>
+<center>
+<h1>Welcome to the world of HTML</h1>
+<input type="button" onclick="demo()" value="Dummy Button" />
+<input type="submit" onclick="demo()" value="Submit Button" />
+</center>
+</form>
+<script>
+function demo(){
+document.querySelector("h1").innerText="Welcome to the world of JavaScript";
+}
+</script>
+
+</body>
+</html>

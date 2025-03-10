@@ -1,0 +1,30 @@
+Methods in Form:-
+
+    1.Get ==>
+        -- Less Secure
+        -- data save in your history
+        -- url length is limited(2048 char.)
+
+    2.Post ==>
+        -- More Secure
+        -- data  not save in your history
+        -- url length is not limited(more than 2048 char.)
+    
+
+
+CSS ==>
+        CSS stands for Cascading Style Sheets. CSS is used for making webpages intractive. It is used to give style to your webpage.
+
+    Types -->
+        Inline CSS :-
+            <h1 style="">HelloWorld</h1>
+
+        Internal CSS :-
+            <style></style>
+
+        External CSS :- make another css file and save as filename.css
+            <link href="filename.css" rel="stylesheet"/>
+
+HTML ==>
+    html stands for Hyper Text Markup Laguage
+    the founder of html is "Tim Burner Lee" 

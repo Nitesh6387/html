@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            background: #fff;
+        }
+        .main{
+            width: 80%;
+            margin: 0 auto;
+            border:2px solid black
+        }
+        header{
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 34px;
+            font-weight: bold;
+        }
+        .logo span{
+            color: #FF9933;
+        }
+        .register button{
+            border: none;
+            background: #34AD54;
+            padding: 10px 20px;
+            color: #fff;
+        }
+
+        nav{
+            padding:10px 20px;
+            background: #34AD54;
+        }
+        nav ul{
+            margin: 0 80px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        ul li{
+            color: #fff;
+            font-weight: bold;
+            list-style: none;
+        }
+        .hero{
+            width: 100%;
+            background: gray;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .loginForm{
+            width: 40%;
+        }
+        .loginForm form{
+            background: rgba(0,0,0,0.2);
+            padding: 20px;
+            color: #fff;
+        }
+        form input{
+            padding-left: 10px;
+            margin-bottom: 10px;
+            height: 40px;
+            width: 100%;
+        }
+         form #btn{
+            padding-left: 0;
+            background: #FF9933;
+            font-weight: bold;
+            border: none;
+         }
+         form h2{
+            text-align: center;
+            margin-bottom: 10px;
+         }
+         form h2 span{
+            color: #FF9933;
+
+         }
+         .hero .heroData{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+         }
+         .heroData button{
+            width: 50%;
+            margin: 0 auto;
+            padding: 10px 0;
+            background: #FF9933;
+            color: #fff;
+            border: none;
+            font-weight: bold;
+         }
+         .heroData h1 span{
+            color: #FF9933;
+         }
+         .services{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         .services .box{
+            text-align: center;
+            padding: 10px;
+            width: 150px;
+         }
+         .services div:nth-child(odd){
+            background: green;
+         }
+         .services div:nth-child(even){
+            background: #FF9933;
+         }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <div class="logo">
+                <p>Code <span>Helper</span></p>
+            </div>
+            <div class="email">
+                <p>Email:</p>
+                <p>email123@gmail.com</p>
+            </div>
+            <div class="contact">
+                <p>Contact Us:</p>
+                <p>+91 9545862545</p>
+            </div>
+            <div class="register">
+                <button>Register Now</button>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Gallery</li>
+                <li>register</li>
+                <li>Contact Us</li>
+                <li>Team</li>
+                <li>Login</li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="loginForm">
+                <form >
+                    <h2>LOGIN <span>HERE</span></h2>
+                    <div>
+                        Username: <br>
+                        <input type="text" placeholder="Enter Username" >
+                    </div>
+                    <div>
+                        Password: <br>
+                        <input type="password" placeholder="Enter Password" >
+                    </div>
+                    <div>
+                        
+                        <input type="submit" value="Login" id="btn" >
+                    </div>
+                </form>
+            </div>
+            <div class="heroData">
+                <h1>Welcome to <span>Code Helper</span></h1>
+                <p>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                </p>
+                <button>Contact Us</button>
+            </div>
+        </div>
+
+        <div class="services">
+            <div class="box">
+                <h2>Title 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, minus? Deleniti sapiente totam perspiciatis architecto.</p>
+            </div>
+            <div class="box">
+                <h2>Title 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, minus? Deleniti sapiente totam perspiciatis architecto.</p>
+            </div>
+            <div class="box">
+                <h2>Title 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, minus? Deleniti sapiente totam perspiciatis architecto.</p>
+            </div>
+            <div class="box">
+                <h2>Title 4</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, minus? Deleniti sapiente totam perspiciatis architecto.</p>
+            </div>
+            <div class="box">
+                <h2>Title 5</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, minus? Deleniti sapiente totam perspiciatis architecto.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

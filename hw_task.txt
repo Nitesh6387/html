@@ -1,0 +1,5 @@
+22/10/24
+make 10 different web page that contains title and favIcon.
+
+make a webpage that contain all your basic details like name,father name, mother name,mobile number,email,college name, qualification,training,hobby and your biography
+use all basic tags that you have read in the previous lecture.

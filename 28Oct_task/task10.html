@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ludo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main {
+            margin: 50px auto;
+            height: 600px;
+            width: 600px;
+            border: 2px solid black;
+        }
+
+        .row1 {
+            display: flex;
+        }
+
+        .box {
+            height: 240px;
+            width: 240px;
+        }
+
+        .row1 .box1 {
+            border: 40px solid red;
+            height: 240px;
+            width: 240px;
+        }
+
+        .row1 .icon {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .row1 .icon1 div {
+            height: 30px;
+            width: 30px;
+            background: red;
+            margin: 25px;
+        }
+
+        .row1 .box2 {
+            border: 40px solid yellow;
+            height: 240px;
+            width: 240px;
+        }
+
+        .row1 .icon2 div {
+            height: 30px;
+            width: 30px;
+            background: yellow;
+            margin: 25px;
+        }
+
+
+
+        .boxes {
+            height: 240px;
+            width: 120px;
+            /* border: 2px solid black; */
+            display: flex;
+        }
+
+        .row1 .line {
+            height: 240px;
+            width: 40px;
+            /* border: 2px solid red;   */
+        }
+
+        .line diV {
+            height: 40px;
+            width: 40px;
+            border: 1px solid black;
+        }
+
+        .row2 {
+            height: 120px;
+            width: 600px;
+            /* border: 2px solid aqua; */
+        }
+
+        .row2 .line {
+            display: flex;
+        }
+
+        .row2 .home{
+            height: 120px;
+            width: 120px;
+            /* border: 2px solid red; */
+        
+        }
+        .homebox{
+            border-top: 60px solid yellow;
+            border-left: 60px solid red;
+            border-right: 60px solid blue;
+            border-bottom: 60px solid green;
+        }
+
+
+
+        .boxes2{
+            display: flex;
+        }
+
+        .row3{
+            display: flex;
+        }
+        .row3 .box1 {
+            border: 40px solid green;
+            height: 240px;
+            width: 240px;
+        }
+
+        .row3 .icon {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .row3 .icon1 div {
+            height: 30px;
+            width: 30px;
+            background: green;
+            margin: 25px;
+        }
+        .row3 .box2 {
+            border: 40px solid blue;
+            height: 240px;
+            width: 240px;
+        }
+
+        .row3 .icon2 div {
+            height: 30px;
+            width: 30px;
+            background: blue;
+            margin: 25px;
+        }
+        .redstart{
+            background-color: red;
+        }
+        .bluestart{
+            background-color: blue;
+        }
+        .yellowstart{
+            background-color: yellow;
+        }
+        .greenstart{
+            background-color: green;
+        }
+        .stop{
+            position: relative;
+        }
+        .stop::before{
+            content: '🎇';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class=" row row1">
+            <div class="box box1">
+                <div class="icon icon1">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="icon icon1">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="boxes">
+                <div class="line line1">
+                    <div></div>
+                    <div></div>
+                    <div class="stop"></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="line line2">
+                    <div></div>
+                    <div class="yellowstart"></div>
+                    <div class="yellowstart"></div>
+                    <div class="yellowstart"></div>
+                    <div class="yellowstart"></div>
+                    <div class="yellowstart"></div>
+                </div>
+                <div class="line line3">
+                    <div></div>
+                    <div class="yellowstart "></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="box box2">
+                <div class="icon icon2">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="icon icon2">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row2">
+            <div class="boxes2">
+                <div>
+                    <div class="line line1">
+                        <div></div>
+                        <div class="redstart"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="line line2">
+                        <div></div>
+                        <div class="redstart"></div>
+                        <div class="redstart"></div>
+                        <div class="redstart"></div>
+                        <div class="redstart"></div>
+                        <div class="redstart"></div>
+                    </div>
+                    <div class="line line3">
+                        <div></div>
+                        <div></div>
+                        <div class="stop"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="home">
+                    <div class="homebox"></div>
+                </div>
+                <div>
+                    <div class="line line1">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="stop"></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="line line2">
+                        <div class="bluestart"></div>
+                        <div class="bluestart"></div>
+                        <div class="bluestart"></div>
+                        <div class="bluestart"></div>
+                        <div class="bluestart"></div>
+                        <div></div>
+                    </div>
+                    <div class="line line3">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="bluestart "></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row3">
+            <div class="box box1">
+                <div class="icon icon1">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="icon icon1">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="boxes">
+                <div class="line line1">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div class="greenstart"></div>
+                    <div></div>
+                </div>
+                <div class="line line2">
+                    <div class="greenstart"></div>
+                    <div class="greenstart"></div>
+                    <div class="greenstart"></div>
+                    <div class="greenstart"></div>
+                    <div class="greenstart"></div>
+                    <div></div>
+                </div>
+                <div class="line line3">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div class="stop"></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="box box2">
+                <div class="icon icon2">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="icon icon2">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

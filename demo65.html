@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card{
+            width: 220px;
+            box-shadow: 0px 2px 10px black;
+            padding: 4px;
+            border-radius: 10px;
+            font-family: sans-serif;
+            min-height: 350px;
+            /* background: rgba(0,0,0,0.9); */
+            /* color: white; */
+        }
+
+        .card img{
+            height: 180px;
+            width: 170px;
+            border-radius: 8px;
+        }
+        .main{
+            padding: 20px;
+        }
+        .card .image{
+            text-align: center;
+        }
+        .card h1{
+           font-size: 20px;
+           margin: 6px 0;
+        }
+        .card_data{
+            padding: 12px;
+        }
+        .card_data p{
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: gray;
+        }
+        .card_btn>div{
+            display: inline;
+            /* height: 10px;
+            width: 10px; */
+            background: red;
+            margin: 2px;
+            border-radius: 50%;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            transition: all ease 0.4s;
+        }
+        .card_btn>div:hover{
+        cursor: pointer;
+            background: orange;
+            transition: 0.4s;
+        }
+        .card_btn{
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="card">
+            <div class="image">
+                <img src="TaskImages/bg1.png" >
+            </div>
+            <div class="card_data">
+                <h1>Iphone 15 pro</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h3>₹1,19,000</h3>
+            </div>
+            <div class="card_btn">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

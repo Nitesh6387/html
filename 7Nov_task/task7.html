@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            margin: 20px auto;
+            width: 600px;
+            background: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 5px 10px black;
+        }
+        table{
+            border: 2px solid white;
+            border-radius: 8px;
+            padding: 5px;
+        }
+        td{
+            height: 30px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <table cellspacing="5">
+        <tr>
+            <td>First Name</td>
+            <td>
+                <input type="text" placeholder="Nitesh">(Max 50 character allowed)
+            </td>
+            
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>
+                <input type="text" placeholder="Verma">
+              <span>(Max 50 character allowed)</span>
+            </td>
+            
+        </tr>
+        <tr>
+            <td>Email Id</td>
+            <td>
+                <input type="email" placeholder="example@gmail.com">
+            </td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio">Male
+                <input type="radio">Female
+            </td>
+        </tr>
+        <tr>
+            <td>DOB</td>
+            <td>
+                <input type="date">
+            </td>
+        </tr>
+        <tr>
+            <td>Adress</td>
+            <td colspan="2">
+                <textarea rows="6" cols="40"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td>
+                <input type="text" placeholder="Lucknow">(Max 50 character allowed)
+            </td>
+            
+        </tr>
+        <tr>
+            <td>Pin Code</td>
+            <td>
+                <input type="number" placeholder="229456">(Max 6 Number allowed)
+            </td>
+           
+        </tr>
+        <tr>
+            <td>State</td>
+            <td>
+                <input type="text" placeholder="Uttar Pradesh">
+            </td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>
+                <input type="text" placeholder="India">
+            </td>
+        </tr>
+        <tr>
+            <td>Hobbies</td>
+            <td colspan="2">
+                <input type="checkbox">Drawing
+                <input type="checkbox">Singing
+                <input type="checkbox">Reading
+                <input type="checkbox">Sketching <br>
+                <input type="checkbox">Others <input type="text" placeholder="Eg Teaching"><span>(Max 50 character allowed)</span>
+            </td>
+        </tr>
+        <tr>
+            <td>Qualification</td>
+            <td>
+                <input type="checkbox">High School(10th) <br>
+                <input type="checkbox">Higher School(12ths) <br>
+                <input type="checkbox">Graduation(Bacholars) <br>
+                <input type="checkbox">Post Graduation(Masters) <br>
+                <input type="checkbox">PHD
+            </td>
+        </tr>
+        <tr>
+            <td>Course Applied for</td>
+            <td>
+                <input type="checkbox">BCA(Bachelors of Computer Application)<br>
+                <input type="checkbox">B.Com(Bachelor of Commerce) <br>
+                <input type="checkbox">B.Sc(Bachelor of Science) <br>
+                <input type="checkbox">B.A(Bachelor of Arts) <br>
+                <input type="checkbox">MCA(Master of Computer Application)<br>
+                <input type="checkbox">M.Com(Master of Commerce)<br>
+                <input type="checkbox">M.Sc.(Master of Science)<br>
+                <input type="checkbox">M.A(Master of Arts)<br>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

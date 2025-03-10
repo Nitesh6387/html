@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            color: white;
+            background-image: url(logo.jpeg);
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .main {
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        nav {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo h2{
+            font-weight: bold;
+            font-size: 28px;
+            color: rgb(255, 94, 0);
+        }
+        .menu ul {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .menu ul li {
+            list-style: none;
+        }
+
+        .search {
+            border: 2px solid rgb(211, 89, 8);
+            height: 40px;
+            width: 250px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .search input {
+            color: #fff;
+            padding-left: 5px;
+            background: transparent;
+            height: 40px;
+            border: none;
+            outline: none;
+
+            &::placeholder {
+                color: white;
+            }
+        }
+
+        .search button {
+            height: 40px;
+            border: none;
+            color: #fff;
+            width: 75px;
+            background: rgb(239, 55, 4);
+        }
+
+        .hero {
+            margin: 10px 0px;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .hero_data {
+            width: 70%;
+            /* border: 2px solid rgb(211, 89, 8); */
+        }
+
+        .hero_form {
+            width: 30%;
+            /* border: 2px solid rgb(32, 8, 211); */
+        }
+        .hero_data h2{
+            font-size: 38px;
+            letter-spacing: 1.2px;
+        }
+        .hero_data h2 span{
+            font-size: 46px;
+            color: rgb(211, 89, 8);
+        }
+        .hero_data p{
+           line-height: 25px;
+           margin: 10px 0px;
+        }
+        .hero_data button{
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 40px;
+            background-color: rgb(211, 89, 8);
+        }
+
+        .hero_form form{
+            width: 300px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+           margin: 10px;
+           display: flex;
+           flex-direction: column;
+           gap: 20px;
+        }
+        form h2{
+            text-align: center;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: #fff;
+            color: rgba(216, 70, 17, 0.7);
+        }
+        form input{
+            color: #fff;
+            width: 100%;
+            height: 40px;
+            font-size: 17px;
+            background: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid rgb(213, 71, 10);
+            margin-bottom: 10px;
+            &::placeholder{
+                color: #fff;
+                font-size: 18px;
+                letter-spacing: 1.2px;
+            }
+        }
+        form button{
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            background: rgb(255, 94, 0);
+            width: 90%;
+            padding:10px 20px;
+        }
+        form p{
+            text-align: center;
+        }
+        form p a{
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(255,94,0);
+            text-align: center;
+        }
+        form a i{
+            margin: 0px 10px;
+            font-size: 25px;
+            color: #fff;
+        }
+        .icon{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <nav>
+                <div class="logo">
+                    <h2>PraRoz</h2>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>HOME</li>
+                        <li>ABOUT</li>
+                        <li>SERVICES</li>
+                        <li>DESIGN</li>
+                        <li>CONTACT</li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Type to Search">
+                    <button>Search</button>
+                </div>
+            </nav>
+        </header>
+
+        <div class="hero">
+            <div class="hero_data">
+                <h2>Web Design & <br> <span>Development <br></span> Course</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium eaque fuga aliquid, est tempora
+                    nobis eius recusandae, repellendus aspernatur atque quo cumque vel doloremque beatae.</p>
+                <button>Join Us</button>
+            </div>
+            <div class="hero_form">
+                <form>
+                    <div>
+                        <h2>Login Here</h2>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Enter Email Here">
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Enter Password Here">
+                    </div>
+                    <div>
+                        <button>Login</button>
+                    </div>
+                    <div>
+                        <p>
+                            Don't have an account? <br> 
+                            <a href="#">Sign-up </a>here
+                        </p>
+                    </div>
+                    <div class="icon">
+                        <p>Log in with</p>
+                        <div>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                        <a href="#"><i class="fa-brands fa-skype"></i></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

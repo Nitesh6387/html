@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 350px;
+            margin: 200px auto;
+            border-radius: 8px;
+            box-shadow: 0px 2px 10px rgb(86, 88, 86);
+            padding: 20px;
+        }
+        form{
+            padding: 10px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        form div{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        input{
+            padding-left: 10px;
+            height: 40px;
+            border-radius: 6px;
+            border: 2px solid blue;
+            /* outline: none; */
+            font-size: 18px;
+        }
+        input[type="submit"]{
+            padding:8px;
+            width: 50%;
+            background: rgb(110, 110, 212);
+            color: #fff;
+            font-weight: bold;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+        <div class="main">
+            <h2>Login Form</h2>
+            <form>
+                <div>
+                    <label>Username/Mobile:</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Password:</label>
+                    <input type="password">
+                </div>
+                <div>
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+</body>
+
+</html>
